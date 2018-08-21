@@ -1,0 +1,8 @@
+<h1>Show page</h1>
+
+<p><%= @restaurant.name %></p>
+
+<%= link_to "Delete", restaurant_path(@restaurant),
+      method: :delete,
+      data: { confirm: "Are you sure?" } %>
+
